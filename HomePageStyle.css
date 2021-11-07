@@ -8,9 +8,15 @@ body {
     top: 0;
     bottom: 0;
     width: 101%;
+    font-size: 16px;
     height: max-content;
     overflow-x: hidden;
     background:#ffe8bc;
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer */
+    -khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) */
+    -webkit-user-select: none; /* Chrome, Safari, and Opera */
+    -webkit-touch-callout: none; /* Disable Android and iOS callouts*/
 }
 p{
     cursor: pointer;
@@ -370,7 +376,7 @@ img {
     }
     
 }
-@media (max-width: 46.188em)
+@media (max-width: 480px)
 {
     .logo{
         height:50px;
@@ -473,7 +479,7 @@ img {
         height:15px !important;
     }
 }
-@media (min-width: 46.188em) and (max-width:48em )
+@media (min-width: 480px) and (max-width:768px )
 {
     .logo{
         height:50px;
@@ -574,7 +580,7 @@ img {
     }
 }
 
-@media (min-width: 48.1em) and (max-width:64em )
+@media (min-width: 768px) and (max-width:1024px )
 {
     .logo{
         height:50px;

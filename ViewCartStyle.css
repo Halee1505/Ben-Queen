@@ -1,6 +1,7 @@
 body {
     width: 100%;
     height: fit-content;
+    font-size: 16px;
     overflow-x: hidden;
     background: rgb(255, 177, 65);
     background: radial-gradient(circle, rgba(255, 177, 65, 0.8) 0%, rgba(251, 141, 23, 0.8) 100%);
@@ -253,7 +254,7 @@ p {
     flex-grow: 2;
 }
 
-@media (max-width: 46.188em)
+@media (max-width: 480px)
 {
     .logo{
         height:50px;
@@ -388,7 +389,7 @@ p {
         margin-right: 2px;
     }
 }
-@media (min-width: 46.188em) and (max-width:48em )
+@media (min-width: 480px) and (max-width:768px )
 {
     .logo{
         height:50px;
@@ -494,7 +495,7 @@ p {
     }
 }
 
-@media (min-width: 48.1em) and (max-width:64em )
+@media (min-width: 768px) and (max-width:1024px )
 {
     .logo{
         height:50px;
