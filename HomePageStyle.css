@@ -3,8 +3,6 @@ html{
 }
 body {
     position: relative;
-    left: -8px;
-    right: -8px;
     top: 0;
     bottom: 0;
     width: 101%;
@@ -24,7 +22,9 @@ p{
 img {
     cursor: pointer;
 }
-
+button:active {
+    background-color: rgb(216, 149, 62);;
+}
 .header {
     width: 100%;
     height: 80px;
@@ -325,10 +325,11 @@ img {
 }
 .Price-Add{
     width: 100% !important;
-    height: 0px !important;
+    height: 10px !important;
     flex-direction: row !important;
     margin-top: 5px !important;
     justify-content: space-between;
+    align-items: center;
 
 }
 
@@ -337,10 +338,13 @@ img {
     text-align: center;
     margin-top:0px;
     background-color: #fca23f; 
-    border-radius:50%;
-    font-size: 20px;
-    height: 20px;
-    width: 26px;
+    padding: 0px 0px;
+    border-radius: 50%;
+    border: 0px solid #000;
+    font-size: 25px;
+    height: 25px;
+    cursor:pointer;
+    width: 25px;
 
 }
 .product-price{
@@ -348,8 +352,6 @@ img {
     color:#fca23f;
     margin-top: 0px !important;
     margin-bottom: 0px !important;
-    width:100% !important;
-    height:40px !important;
     cursor: pointer;
     align-self: start !important;
 }
@@ -376,7 +378,7 @@ img {
     }
     
 }
-@media (max-width:414px)
+@media (max-width: 46.188em)
 {
     .logo{
         height:50px;
@@ -469,8 +471,9 @@ img {
         font-size:100%;
     }
     .product-add{
-        font-size:15px;
+        width: 18px;
         height: 18px;
+        font-size:18px;
     }
     #food-list div{
         margin: 12px 2%;
@@ -479,7 +482,7 @@ img {
         height:15px !important;
     }
 }
-@media (min-width: 736px) and (max-width:1620px )
+@media (min-width: 46.188em) and (max-width:48em )
 {
     .logo{
         height:50px;
@@ -568,9 +571,9 @@ img {
         font-size:140%;
     }
     .product-add{
-        font-size:15px;
+        width: 18px;
         height: 18px;
-        margin-top: 2px;
+        font-size:18px;
     }
     #food-list div{
         margin: 12px 2%;
@@ -580,7 +583,7 @@ img {
     }
 }
 
-@media (min-width: 1620px) and (max-width:2160px )
+@media (min-width: 48.1em) and (max-width:64em )
 {
     .logo{
         height:50px;
@@ -673,10 +676,9 @@ img {
         font-size:190%;
     }
     .product-add{
-        font-size:30px;
-        height: 32px;
+        height: 36px;
         width: 36px;
-        margin-top: 6px;
+        font-size:36px;
     }
     #food-list div{
         margin: 12px 2%;

@@ -78,7 +78,7 @@
 
                         <div className="Price-Add">
                             <div onClick={()=>ViewDetail(FoodInfo.name)} className="product-price">{FoodInfo.price}.000đ</div>
-                            <p key={index} className="product-add" onClick={()=>AddToCart(FoodInfo)}>+</p>
+                            <button key={index} className="product-add" onClick={()=>AddToCart(FoodInfo)}>+</button>
                         </div>
                         <div className="product-rate"><img src="src/rate.png" alt="" /></div>
                     </div>

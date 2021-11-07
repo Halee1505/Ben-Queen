@@ -78,9 +78,9 @@
                         <p className="ten">{CartItem.name}</p>
                         <p className="gia">{CartItem.price}.000đ</p>
                         <div className="soluong">                        
-                            <p className="giam" onClick={()=>CountDown(CartItem,index)}>-</p>
+                            <button className="giam" onClick={()=>CountDown(CartItem,index)}>-</button>
                             <p className="count">{CartItem.count}</p>
-                            <p className="tang" onClick={()=>CountUp(CartItem,index)}>+</p>
+                            <button className="tang" onClick={()=>CountUp(CartItem,index)}>+</button>
                         </div>
                         <p className="thanhtien">{CartItem.price*CartItem.count}.000đ</p>
                         <img className="thungrac" src="src/trash.png" alt="" onClick={()=>{DelItem(CartItem,index)}}/>
