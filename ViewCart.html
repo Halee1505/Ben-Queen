@@ -24,7 +24,7 @@
             <div className="header">
                 <img src="src/logo.png" alt="" className="logo" onClick={showMainPage}/>
                 <input type="text" className="search-bar" placeholder="Search" />
-                <p  onClick={showBrand}>Menu</p>
+                <p  onClick={showBrand}>Thương hiệu</p>
                 <p>Đặt bàn</p>
                 <div className="cart-info">
                     <img src="src/cart.png" alt="" className="cart" onClick={ViewCart}/>
@@ -78,9 +78,9 @@
                         <p className="ten">{CartItem.name}</p>
                         <p className="gia">{CartItem.price}.000đ</p>
                         <div className="soluong">                        
-                            <button className="giam" onClick={()=>CountDown(CartItem,index)}>-</button>
+                            <p className="giam" onClick={()=>CountDown(CartItem,index)}>-</p>
                             <p className="count">{CartItem.count}</p>
-                            <button className="tang" onClick={()=>CountUp(CartItem,index)}>+</button>
+                            <p className="tang" onClick={()=>CountUp(CartItem,index)}>+</p>
                         </div>
                         <p className="thanhtien">{CartItem.price*CartItem.count}.000đ</p>
                         <img className="thungrac" src="src/trash.png" alt="" onClick={()=>{DelItem(CartItem,index)}}/>

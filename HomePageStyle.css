@@ -3,18 +3,14 @@ html{
 }
 body {
     position: relative;
+    left: -8px;
+    right: -8px;
     top: 0;
     bottom: 0;
     width: 101%;
-    font-size: 16px;
     height: max-content;
     overflow-x: hidden;
     background:#ffe8bc;
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* Internet Explorer */
-    -khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) */
-    -webkit-user-select: none; /* Chrome, Safari, and Opera */
-    -webkit-touch-callout: none; /* Disable Android and iOS callouts*/
 }
 p{
     cursor: pointer;
@@ -22,9 +18,7 @@ p{
 img {
     cursor: pointer;
 }
-button:active {
-    background-color: rgb(216, 149, 62);;
-}
+
 .header {
     width: 100%;
     height: 80px;
@@ -215,7 +209,7 @@ button:active {
 } */ 
 .brand {
     width: 70%;
-    height: 540px;
+    height: max-content;
     background-color: #ffe8bc;
     margin-left: 15%;
     margin-top: 140px;
@@ -238,8 +232,8 @@ button:active {
 }
 
 .brand-logo {
-    height: 160px;
-    width: 15%;
+    height: 150px;
+    width: 150px;
     background-color: #fff;
     color: #fff;
     text-shadow: 1px 1px 4px #000;
@@ -325,11 +319,10 @@ button:active {
 }
 .Price-Add{
     width: 100% !important;
-    height: max-content !important;
+    height: 0px !important;
     flex-direction: row !important;
     margin-top: 5px !important;
     justify-content: space-between;
-    align-items: center;
 
 }
 
@@ -338,13 +331,10 @@ button:active {
     text-align: center;
     margin-top:0px;
     background-color: #fca23f; 
-    padding: 0px 0px;
-    border-radius: 50%;
-    border: 0px solid #000;
-    font-size: 25px;
-    height: 25px;
-    cursor:pointer;
-    width: 25px;
+    border-radius:50%;
+    font-size: 20px;
+    height: 20px;
+    width: 26px;
 
 }
 .product-price{
@@ -352,6 +342,8 @@ button:active {
     color:#fca23f;
     margin-top: 0px !important;
     margin-bottom: 0px !important;
+    width:100% !important;
+    height:40px !important;
     cursor: pointer;
     align-self: start !important;
 }
@@ -415,8 +407,8 @@ button:active {
         margin-bottom: 30px;
     }
     .brand-logo{
-        width: 40%;
-        height:120px;
+        width: 105px;
+        height:105px;
     }
     .brand-logo p{
         margin-top:110px;
@@ -471,9 +463,8 @@ button:active {
         font-size:100%;
     }
     .product-add{
-        width: 18px;
+        font-size:15px;
         height: 18px;
-        font-size:18px;
     }
     #food-list div{
         margin: 12px 2%;
@@ -515,8 +506,8 @@ button:active {
         margin-bottom: 30px;
     }
     .brand-logo{
-        width: 23.3%;
-        height:120px;
+        width: 126.5px;
+        height:126.5px;
     }
     .brand-logo p{
         margin-top:110px;
@@ -571,9 +562,9 @@ button:active {
         font-size:140%;
     }
     .product-add{
-        width: 18px;
+        font-size:15px;
         height: 18px;
-        font-size:18px;
+        margin-top: 2px;
     }
     #food-list div{
         margin: 12px 2%;
@@ -616,8 +607,8 @@ button:active {
         margin-bottom: 30px;
     }
     .brand-logo{
-        width: 23.3%;
-        height:157px;
+        width: 168px;
+        height:168px;
     }
     .brand-logo p{
         margin-top:140px;
@@ -676,9 +667,10 @@ button:active {
         font-size:190%;
     }
     .product-add{
-        height: 36px;
+        font-size:30px;
+        height: 32px;
         width: 36px;
-        font-size:36px;
+        margin-top: 6px;
     }
     #food-list div{
         margin: 12px 2%;
